@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\img"
+    "\\css",
+    "\\css\\demo",
+    "\\css\\themes",
+    "\\css\\themes\\type-c",
+    "\\css\\themes\\type-d",
+    "\\premium"
   ],
-  "SelectedNode": "\\img",
+  "SelectedNode": "\\css\\themes\\type-c\\theme-navy.min.css",
   "PreviewInSolutionExplorer": false
 }
