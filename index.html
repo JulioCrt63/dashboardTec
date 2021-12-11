@@ -3,91 +3,77 @@
 
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<title>Dashboard |Predicción de accidentes Viales</title>
 
 
-    <!--STYLESHEET-->
-    <!--=================================================-->
-
-    <!--Open Sans Font [ OPTIONAL ]-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-
-
-    <!--Bootstrap Stylesheet [ REQUIRED ]-->
-    <link href="css\bootstrap.min.css" rel="stylesheet">
+	<!--STYLESHEET-->
+	<!--=================================================-->
+	<!--Open Sans Font [ OPTIONAL ]-->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
 
-    <!--Nifty Stylesheet [ REQUIRED ]-->
-    <link href="css\nifty.min.css" rel="stylesheet">
+	<!--Bootstrap Stylesheet [ REQUIRED ]-->
+	<link href="css\bootstrap.min.css" rel="stylesheet">
 
 
-    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
-    <link href="css\demo\nifty-demo-icons.min.css" rel="stylesheet">
+	<!--Nifty Stylesheet [ REQUIRED ]-->
+	<link href="css\nifty.min.css" rel="stylesheet">
 
 
-    <!--=================================================-->
+	<!--Nifty Premium Icon [ DEMONSTRATION ]-->
+	<link href="css\demo\nifty-demo-icons.min.css" rel="stylesheet">
+
+
+	<!--=================================================-->
+	<!--Pace - Page Load Progress Par [OPTIONAL]-->
+	<link href="plugins\pace\pace.min.css" rel="stylesheet">
+	<script src="plugins\pace\pace.min.js"></script>
+
+
+	<!--Demo [ DEMONSTRATION ]-->
+	<link href="css\demo\nifty-demo.min.css" rel="stylesheet">
+
+	<!--link de Impresora-->
+	<link href="estilos_impresion.css" rel="stylesheet" type="text/css" media="print">
 
 
 
-    <!--Pace - Page Load Progress Par [OPTIONAL]-->
-    <link href="plugins\pace\pace.min.css" rel="stylesheet">
-    <script src="plugins\pace\pace.min.js"></script>
-
-
-    <!--Demo [ DEMONSTRATION ]-->
-    <link href="css\demo\nifty-demo.min.css" rel="stylesheet">
-
-
-            
-   
-        
 </head>
 
 <!--TIPS-->
 <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
-<body >
-	<div id="container " >
+<body>
+	
+	<div id="container">
+		
 
 		<!--NAVBAR-->
 		<!--===================================================-->
-		<header id="navbar" >
+		<header id="navbar">
+
 			<div id="navbar-container" class="boxed ">
-				
-					<div class="brand-title">
-						<span class="text" >Tecnológico de Tijuana</span>
-					<!----<img src="img\img.tec.jpg" alt="Logo Tec" class="brand-icon">-->
+
+				<div class="brand-title">
+					<span class="text ">Prevención</span>
+
 
 
 				</div>
-				
-				
+
+
 			</div>
-				
-				<!--================================-->
-				<div class="navbar-content">
-					<ul class="nav navbar-top-links">
-
-						
-						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-						<!--End Search-->
-
-					</ul>
-					<ul class="nav navbar-top-links">
-
-						<!---<img src=img/Ayutamiento.jpg alt="Logo de Ayuntamiento" width="250" height="100" />-->
 
 
-						<!--End Navbar Dropdown-->
 
-						</ul>
-  </div>
+			<!--================================-->
+			
 
 
-	</header>
+		</header>
 		<!--===================================================-->
 		<!--END NAVBAR-->
 
@@ -100,347 +86,386 @@
 				<div id="page-head">
 
 					<div class="pad-all text-center">
-						<h3>Sistema de predicción de accidentes Viales.</h3>
-						<p1>
-							Dirección de Policía y Tránsito Municipal de Tijuana .<p>
-						</p1>
-						</div>
+						<p>
+							<div align="center"><img src="img\logo.jpg" alt="Logo" width="60"></div>
+						</p>
+						<h1>Sistema de predicción de accidentes Viales.</h1>
+						<h5>
+							Dirección de Policía y Tránsito Municipal de Tijuana .
+						</h5>
+
+
+
 
 					</div>
 
-					</div>
 				</div>
-		          <!--Page content-->
-				<!--===================================================-->
-				<div id="page-content">
-
-					<div class="row-center">
-						<div class="col-lg-7">
-
-							<!--Network Line Chart-->
-							<!--===================================================-->
-							<div id="demo-panel-network" class="panel">
-								<div class="panel-heading">
-									<div class="panel-control row-center">
-
-										<button id=" row-ceneter-demo-panel-network-refresh" class="btn btn-default btn-active-primary" data-toggle="panel-overlay" data-target="#demo-panel-network"><i class="demo-psi-repeat-2"></i></button>
-										<div class="dropdown">
-
-										</div>
-									</div>
-									<h3 class="panel-title">Control</h3>
-								</div>
-
-
-								<!--chart placeholder-->
-								<div class="pad-all">
-									<div id="demo-chart-network" style="height: 255px"></div>
-
-								</div>
-
-
-
-
-
-
-								<!--Block Styled Form -->
-								<!--===================================================-->
-
-								<form>
-									<div class="panel-body ">
-										<div class="col-sm-17">
-											<div class="row">
-												<div class="col-sm-2">
-													<div class="form-group">
-														<label class="control-label">Fecha</label>
-														<input type="date" id="start" name="trip-start"
-															   value="2018-07-22"
-															   min="2018-01-01" max="2018-12-31">
-
-
-													</div>
-												</div>
-												<div class="col-sm-2">
-													<div class="form-group">
-														<label class="control-label">Hora de Inicio</label>
-														<input type="time" name="hora de inicio" min="12:00" max="18:00" step="600">
-													</div>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-sm-2">
-													<div class="form-group">
-														<label class="control-label">Fecha</label>
-														<input type="date" id="start" name="trip-start"
-															   value="2018-07-22"
-															   min="2018-01-01" max="2018-12-31">
-													</div>
-												</div>
-												<div class="col-sm-2">
-													<div class="form-group">
-														<label class="control-label">Hora Final</label>
-														<input type="time" name="hora final" min="12:00" max="18:00" step="600">
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-1">
-												<div class="panel-footer text-right">
-													<button class="btn btn-success" type="submit">Submit</button>
-												</div>
-											</div>
-
-
-
-										</div>
-
-									</div>
-
-
-								</form>
-
-
-								<!--Dropzonejs-->
-								<!--===================================================-->
-								<form id="demo-dropzone" action="#" class="dropzone">
-									<div class="dz-default dz-message">
-										<div class="dz-icon">
-											<i class="demo-pli-upload-to-cloud icon-2x"></i>
-										</div>
-										<div>
-											<span class="dz-text"></span>
-											<p class="text-sm text-muted">Subir información  </p>
-										</div>
-									</div>
-									<div class="fallback">
-										<input name="file" type="file" multiple="">
-									</div>
-								</form>
-								<!--===================================================-->
-								<!--===================================================-->
-								<!--End network line chart-->
-
-							</div>
-								<div class="col-lg-6">
-									<div class="row">
-										<div class="col-sm-6 col-lg-6">
-
-											<!--Sparkline Area Chart-->
-											<div class="panel panel-success panel-colorful">
-												<div class="pad-all">
-													<p class="text-lg text-semibol"></i>Edades con más posibilidad de tener accidentes</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">13</span> Datos
-													</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">1</span> Datos
-													</p>
-												</div>
-												<div class="pad-top text-center">
-													<!--Placeholder-->
-													<div id="demo-sparkline-area" class="sparklines-full-content"></div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6 col-lg-6">
-
-											<!--Sparkline Line Chart-->
-											<div class="panel panel-info panel-colorful">
-												<div class="pad-all">
-													<p class="text-lg text-semibold">Zonas con mayor riesgo de tener accidentes</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">7</span> Datos
-													</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">1</span> Datos
-													</p>
-
-												</div>
-												<div class="pad-top text-center">
-
-													<!--Placeholder-->
-													<div id="demo-sparkline-line" class="sparklines-full-content"></div>
-
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-6 col-lg-6">
-
-											<!--Sparkline bar chart -->
-											<div class="panel panel-purple panel-colorful">
-												<div class="pad-all">
-													<p class="text-lg text-semibold"></i> Tipo de accidentes</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">4</span> Datos
-													</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">2</span> Datos
-													</p>
-
-												</div>
-												<div class="text-center">
-
-													<!--Placeholder-->
-													<div id="demo-sparkline-bar" class="box-inline"></div>
-
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6 col-lg-6">
-
-											<!--Sparkline pie chart -->
-											<div class="panel panel-warning panel-colorful">
-												<div class="pad-all">
-													<p class="text-lg text-semibold">Tipo de vialidad</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">34</span> Datos
-													</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">79</span> Datos
-													</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">34</span> Datos
-													</p>
-													<p class="mar-no">
-														<span class="pull-right text-bold">79</span> Datos
-													</p>
-												</div>
-												<div class="pad-all">
-													<div class="pad-btm">
-
-													</div>
-
-												</div>
-
-
-
-
-											</div>
-
-
-
-										</div>
-
-									</div>
-
-								</div>
-								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-
-								<div id="page-content">
-
-
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="panel" style="width:530px">
-												<div class="panel-heading">
-													<h3 class="panel-title">Mapa</h3>
-												</div>
-
-																		<!----
-												<div class="panel-body">
-
-													<!-- Marker --
-													<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-												<div id="demo-marker-map" style="height: 300px"></div>
-												<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-											</div>
-										</div>
-
-									</div>
-
-
-
-
-
-
-
-									<!-- FOOTER -->
-									<!--===================================================-->
-									<footer id="footer">
-
-
-
-										<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-										<!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
-										<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-										<p class="pad-lft">&#0169; 2018 Your Company</p>
-
-
-
-									</footer>
-									<!--===================================================-->
-									<!-- END FOOTER -->
-									<!-- SCROLL PAGE BUTTON -->
-									<!--===================================================-->
-									<button class="scroll-top btn">
-										<i class="pci-chevron chevron-up"></i>
-									</button>
-									<!--===================================================-->
-								</div>
-							</div>
-						</div>    <!--===================================================-->
-												<!-- END OF CONTAINER -->
-												<!--JAVASCRIPT-->
-												<!--=================================================-->
-												<!--jQuery [ REQUIRED ]-->
-												<script src="js\jquery.min.js"></script>
-
-
-												<!--BootstrapJS [ RECOMMENDED ]-->
-												<script src="js\bootstrap.min.js"></script>
-
-
-												<!--NiftyJS [ RECOMMENDED ]-->
-												<script src="js\nifty.min.js"></script>
-
-
-
-
-												<!--=================================================-->
-												<!--Demo script [ DEMONSTRATION ]-->
-												<script src="js\demo\nifty-demo.min.js"></script>
-
-
-												<!--Flot Chart [ OPTIONAL ]-->
-												<script src="plugins\flot-charts\jquery.flot.min.js"></script>
-												<script src="plugins\flot-charts\jquery.flot.resize.min.js"></script>
-												<script src="plugins\flot-charts\jquery.flot.tooltip.min.js"></script>
-
-
-												<!--Sparkline [ OPTIONAL ]-->
-												<script src="plugins\sparkline\jquery.sparkline.min.js"></script>
-
-
-												<!--Specify page [ SAMPLE ]-->
-												<script src="js\demo\dashboard.js"></script>
-
-												<!--=================================================-->
-												<!--Demo script [ DEMONSTRATION ]-->
-												<script src="js\demo\nifty-demo.min.js"></script>
-
-
-												<!--Gmaps [ OPTIONAL ]-->
-												<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-												<script src="plugins\gmaps\gmaps.js"></script>
-
-
-												<!--Map Example [ SAMPLE ]-->
-												<script src="js\demo\misc-gmaps.js"></script>
-
-
-
-
-						
 
 			</div>
+		</div>
+
+
+
+
+
+		<!--Page content-->
+		<!--===================================================-->
+		<div id="page-content" style="left:400px">
+	
+				<diva class="row-center">
+					<div class="col-lg-7">
+						<div class="center-block">
+						</div>
+
+						<!--Network Line Chart-->
+						<!--===================================================-->
+
+						<div id="demo-panel-network" class="panel">
+							<div class="panel-heading">
+								<div class="panel-control row-center">
+
+									<button id=" row-ceneter-demo-panel-network-refresh" class="btn btn-default btn-active-primary" data-toggle="panel-overlay" data-target="#demo-panel-network"><i class="demo-psi-repeat-2"></i></button>
+									<div class="dropdown">
+
+									</div>
+								</div>
+								<h3 class="panel-title">Control</h3>
+							</div>
+
+
+							<!--chart placeholder-->
+							<div class="pad-all">
+								<div id="demo-chart-network" style="height: 255px"></div>
+
+							</div>
+
+
+
+
+
+
+							<!--Block Styled Form -->
+							<!--===================================================-->
+
+							<form>
+								<div class="panel-body ">
+									<div class="col-sm-17">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Fecha</label>
+													<input type="date" class="form-control" id="start" name="trip-start"
+														   value="2021-07-22"
+														   min="2021-01-01" max="2021-12-31">
+
+
+												</div>
+											</div>
+											<div class="col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Hora de Inicio</label>
+													<input type="time" class="form-control" name="hora de inicio" min="12:00" max="18:00" step="600">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Fecha</label>
+													<input type="date" class="form-control" id="start" name="trip-start"
+														   value="2021-07-22"
+														   min="2021-01-01" max="2021-12-31">
+												</div>
+											</div>
+											<div class="col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Hora Final</label>
+													<input type="time" class="form-control" name="hora final" min="12:00" max="18:00" step="600">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-1">
+											<div class="panel-footer text-right">
+												<button class="btn btn-success-form-control" type="submit">Enviar</button>
+											</div>
+										</div>
+
+
+
+									</div>
+
+								</div>
+
+
+							</form>
+
+
+
+							<!--Dropzonejs-->
+							<!--===================================================-->
+							<form id=" demo-dropzone" action="#">
+								<div class="dz-default dz-message">
+									<div class="dz-icon">
+										<i class="demo-pli-upload-to-cloud icon-2x"></i>
+									</div>
+									<div>
+										<span class="dz-text"></span>
+										<p class="text-sm text-muted">subir Archivo</p>
+									</div>
+								</div>
+								<div class="fallback">
+									<input name="file" type="file" multiple="">
+								</div>
+							</form>
+							<!--===================================================-->
+							<!--===================================================-->
+							<!--End network line chart-->
+
+							
+
+								<form><hr />
+
+									<div class="row">
+										<div class="col-sm-2">
+											<div class="form-group">
+
+
+												<input type="button" value="Imprimir PDF" onClick="window.print()">
+												
+
+											</div>
+										</div>
+									</div>
+
+
+								</form>
+							
+
+						</div>
+						<div class="col-lg-6">
+							<div class="row">
+								<div class="col-sm-6 col-lg-6">
+
+									<!--Sparkline Area Chart-->
+									<div class="panel panel-success panel-colorful">
+										<div class="pad-all">
+											<p class="text-lg text-semibol"></i>Edades con más posibilidad de tener accidentes</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">13</span> Datos
+											</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">1</span> Datos
+											</p>
+										</div>
+										<div class="pad-top text-center">
+											<!--Placeholder-->
+											<div id="demo-sparkline-area" class="sparklines-full-content"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-6">
+
+									<!--Sparkline Line Chart-->
+									<div class="panel panel-info panel-colorful">
+										<div class="pad-all">
+											<p class="text-lg text-semibold">Zonas con mayor riesgo de tener accidentes</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">7</span> Datos
+											</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">1</span> Datos
+											</p>
+
+										</div>
+										<div class="pad-top text-center">
+
+											<!--Placeholder-->
+											<div id="demo-sparkline-line" class="sparklines-full-content"></div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-lg-6">
+
+									<!--Sparkline bar chart -->
+									<div class="panel panel-purple panel-colorful">
+										<div class="pad-all">
+											<p class="text-lg text-semibold"></i> Tipo de accidentes</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">4</span> Datos
+											</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">2</span> Datos
+											</p>
+
+										</div>
+										<div class="text-center">
+
+											<!--Placeholder-->
+											<div id="demo-sparkline-bar" class="box-inline"></div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-6">
+
+									<!--Sparkline pie chart -->
+									<div class="panel panel-warning panel-colorful">
+										<div class="pad-all">
+											<p class="text-lg text-semibold">Tipo de vialidad</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">34</span> Datos
+											</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">79</span> Datos
+											</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">34</span> Datos
+											</p>
+											<p class="mar-no">
+												<span class="pull-right text-bold">79</span> Datos
+											</p>
+										</div>
+										<div class="pad-all">
+											<div class="pad-btm">
+
+											</div>
+
+										</div>
+
+
+
+
+									</div>
+
+
+
+								</div>
+
+							</div>
+
+						</div>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+						<div id="page-content">
+
+
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="panel" style="width:530px">
+										<div class="panel-heading">
+											<h3 class="panel-title">Mapa</h3>
+										</div>
+
+										<!----
+				<div class="panel-body">
+
+					<!-- Marker --
+					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+										<div id="demo-marker-map" style="height: 300px"></div>
+										<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+									</div>
+								</div>
+
+							</div>
+
+
+
+
+							
+								
+
+
+							<!-- FOOTER -->
+							<!--===================================================-->
+							<footer id="footer">
+
+
+								<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+								<!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
+								<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+
+								<p class="pad-lft">Instituto Tecnológico de Tijuana</p>
+
+
+
+							</footer>
+							<!--===================================================-->
+							<!-- END FOOTER -->
+							<!-- SCROLL PAGE BUTTON -->
+							<!--===================================================-->
+							<button class="scroll-top btn">
+								<i class="pci-chevron chevron-up"></i>
+							</button>
+							<!--===================================================-->
+						</div>
+					</div>
+				</diva>    <!--===================================================-->
+				<!-- END OF CONTAINER -->
+				<!--JAVASCRIPT-->
+				<!--=================================================-->
+				<!--jQuery [ REQUIRED ]-->
+				<script src="js\jquery.min.js"></script>
+
+
+				<!--BootstrapJS [ RECOMMENDED ]-->
+				<script src="js\bootstrap.min.js"></script>
+
+
+				<!--NiftyJS [ RECOMMENDED ]-->
+				<script src="js\nifty.min.js"></script>
+
+
+
+
+				<!--=================================================-->
+				<!--Demo script [ DEMONSTRATION ]-->
+				<script src="js\demo\nifty-demo.min.js"></script>
+
+
+				<!--Flot Chart [ OPTIONAL ]-->
+				<script src="plugins\flot-charts\jquery.flot.min.js"></script>
+				<script src="plugins\flot-charts\jquery.flot.resize.min.js"></script>
+				<script src="plugins\flot-charts\jquery.flot.tooltip.min.js"></script>
+
+
+				<!--Sparkline [ OPTIONAL ]-->
+				<script src="plugins\sparkline\jquery.sparkline.min.js"></script>
+
+
+				<!--Specify page [ SAMPLE ]-->
+				<script src="js\demo\dashboard.js"></script>
+
+				<!--=================================================-->
+				<!--Demo script [ DEMONSTRATION ]-->
+				<script src="js\demo\nifty-demo.min.js"></script>
+
+
+				<!--Gmaps [ OPTIONAL ]-->
+				<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+				<script src="plugins\gmaps\gmaps.js"></script>
+
+
+				<!--Map Example [ SAMPLE ]-->
+				<script src="js\demo\misc-gmaps.js"></script>
+
+
+
+
+
 
 		</div>
-	
+
+	</div>
+
 </body>
 
 
