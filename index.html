@@ -44,14 +44,13 @@
 
 </head>
 
-<!--TIPS-->
-<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+
 <body>
 	
 	<div id="container">
 		
 
-		<!--NAVBAR-->
+		
 		<!--===================================================-->
 		<header id="navbar">
 
@@ -74,12 +73,12 @@
 
 		</header>
 		<!--===================================================-->
-		<!--END NAVBAR-->
+		
 
 		<div class="boxed">
 
 
-			<!--CONTENT CONTAINER-->
+			
 			<!--===================================================-->
 			<div id="content-container">
 				<div id="page-head">
@@ -107,16 +106,16 @@
 
 
 
-		<!--Page content-->
+		
 		<!--===================================================-->
 		<div id="page-content" style="left:400px">
 	
-				<diva class="row-center">
+				<div class="row-center">
 					<div class="col-lg-7">
 						<div class="center-block">
 						</div>
 
-						<!--Network Line Chart-->
+						
 						<!--===================================================-->
 
 						<div id="demo-panel-network" class="panel">
@@ -132,284 +131,187 @@
 							</div>
 
 
-							<!--chart placeholder-->
+							<!-------------------------------->
 							<div class="pad-all">
 								<div id="demo-chart-network" style="height: 255px"></div>
 
 							</div>
 
 
+							<hr/>
 
 
 
+							<!------------------------------ -->
+							<div id="page-content">
 
-							<!--Block Styled Form -->
-							<!--===================================================-->
-
-							<form>
-								<div class="panel-body ">
-									<div class="col-sm-17">
-										<div class="row">
-											<div class="col-sm-2">
-												<div class="form-group">
-													<label class="control-label">Fecha</label>
-													<input type="date" class="form-control" id="start" name="trip-start"
-														   value="2021-07-22"
-														   min="2021-01-01" max="2021-12-31">
-
-
-												</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="panel">
+											<div class="panel-heading">
+												<h3 class="panel-title">Datos de Entrada</h3>
 											</div>
-											<div class="col-sm-2">
-												<div class="form-group">
-													<label class="control-label">Hora de Inicio</label>
-													<input type="time" class="form-control" name="hora de inicio" min="12:00" max="18:00" step="600">
-												</div>
-											</div>
+
 										</div>
-										<div class="row">
-											<div class="col-sm-2">
-												<div class="form-group">
-													<label class="control-label">Fecha</label>
-													<input type="date" class="form-control" id="start" name="trip-start"
-														   value="2021-07-22"
-														   min="2021-01-01" max="2021-12-31">
+										<div class="panel">
+
+											<div class="panel-body">
+												<div class="panel-heading">
+													<h3 class="panel-title">Introduzca el archivo y datos</h3>
 												</div>
-											</div>
-											<div class="col-sm-2">
-												<div class="form-group">
-													<label class="control-label">Hora Final</label>
-													<input type="time" class="form-control" name="hora final" min="12:00" max="18:00" step="600">
+
+												
+												<!--===================================================-->
+												<select data-placeholder="Choose a Country..." id="demo-chosen-select" tabindex="2">
+													<option value="choque">Choque</option>
+													<option value="atropellamiento">Atropellamiento</option>
+													<option value="Vehicular">Vehicular</option>
+													<option value="Vehicular">Volcadura</option>
+													<option value="Fijo">Fijo</option>
+													<option value="Multiple">Multiple</option>
+													<option value="Detenido">Detenido</option>
+													<option value="Abandonado">Abandonado</option>
+													<option value="Sexo">Sexo</option>
+													<option value="Edad">Edad</option>
+													<option value="Fronterizo">Fronterizo</option>
+													<option value="Oficia">Oficial</option>
+													<option value="Particular">Particular</option>
+													<option value="Publico">Publico</option>
+													<option value="Publico">Unidad</option>
+													<option value="Publico">Ebriedad</option>
+													<option value="Lesionados">Lesionados</option>
+													<option value="Muertos">Muertos</option>
+													<option value="Reporte">Reporte</option>
+
+												</select>
+												<p class="text-main text-bold mar-no">Selección estándar</p>
+												<br />
+
+
+
+
+
+												<div class="panel-footer">
+													<div class="row">
+														<div class="col-sm-7 col-sm-offset-14">
+															<button class="btn btn-mint" type="submit">Enviar</button>
+														</div>
+													</div>
 												</div>
-											</div>
-										</div>
-										<div class="col-sm-1">
-											<div class="panel-footer text-right">
-												<button class="btn btn-success-form-control" type="submit">Enviar</button>
-											</div>
-										</div>
+
+												<br />
+												<!--===================================================-->
+												
+												<!--===================================================-->
+												<form id=" demo-dropzone" action="#" style="position: absolute">
+													<div class="col-sm-7 col-sm-offset-14">
+														<div class="dz-default dz-message">
+
+															<div>
+																<span class="dz-text"></span>
+																<p class="text-sm text-muted">subir Archivo</p>
+															</div>
+														</div>
+														<div class="fallback">
+															<input name="file" type="file" multiple="">
+														</div>
+													</div>
+												</form>
 
 
-
-									</div>
-
-								</div>
-
-
-							</form>
-
-
-
-							<!--Dropzonejs-->
-							<!--===================================================-->
-							<form id=" demo-dropzone" action="#">
-								<div class="dz-default dz-message">
-									<div class="dz-icon">
-										<i class="demo-pli-upload-to-cloud icon-2x"></i>
-									</div>
-									<div>
-										<span class="dz-text"></span>
-										<p class="text-sm text-muted">subir Archivo</p>
-									</div>
-								</div>
-								<div class="fallback">
-									<input name="file" type="file" multiple="">
-								</div>
-							</form>
-							<!--===================================================-->
-							<!--===================================================-->
-							<!--End network line chart-->
-
-							
-
-								<form><hr />
-
-									<div class="row">
-										<div class="col-sm-2">
-											<div class="form-group">
-
-
-												<input type="button" class="form-control" value="Imprimir PDF" onClick="window.print()">
+												<!--===================================================-->
+												<!--===================================================-->
 												
 
-											</div>
-										</div>
-									</div>
+												<br />
+
+												<form>
 
 
-								</form>
-							
+													<div class="row" style=" left:150px">
+														<div class="col-sm-4 col-sm-offset-12">
+															<div class="form-group" style="position:absolute">
 
-						</div>
-						<div class="col-lg-6">
-							<div class="row">
-								<div class="col-sm-6 col-lg-6">
 
-									<!--Sparkline Area Chart-->
-									<div class="panel panel-success panel-colorful">
-										<div class="pad-all">
-											<p class="text-lg text-semibol"></i>Edades con más posibilidad de tener accidentes</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">13</span> Datos
-											</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">1</span> Datos
-											</p>
-										</div>
-										<div class="pad-top text-center">
-											<!--Placeholder-->
-											<div id="demo-sparkline-area" class="sparklines-full-content"></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-6">
+																<input type="button" class="form-control" value="Imprimir Resultado" onClick="window.print()">
 
-									<!--Sparkline Line Chart-->
-									<div class="panel panel-info panel-colorful">
-										<div class="pad-all">
-											<p class="text-lg text-semibold">Zonas con mayor riesgo de tener accidentes</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">7</span> Datos
-											</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">1</span> Datos
-											</p>
 
-										</div>
-										<div class="pad-top text-center">
+															</div>
+														</div>
+													</div>
 
-											<!--Placeholder-->
-											<div id="demo-sparkline-line" class="sparklines-full-content"></div>
 
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-6 col-lg-6">
+												</form>
 
-									<!--Sparkline bar chart -->
-									<div class="panel panel-purple panel-colorful">
-										<div class="pad-all">
-											<p class="text-lg text-semibold"></i> Tipo de accidentes</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">4</span> Datos
-											</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">2</span> Datos
-											</p>
-
-										</div>
-										<div class="text-center">
-
-											<!--Placeholder-->
-											<div id="demo-sparkline-bar" class="box-inline"></div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-6">
-
-									<!--Sparkline pie chart -->
-									<div class="panel panel-warning panel-colorful">
-										<div class="pad-all">
-											<p class="text-lg text-semibold">Tipo de vialidad</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">34</span> Datos
-											</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">79</span> Datos
-											</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">34</span> Datos
-											</p>
-											<p class="mar-no">
-												<span class="pull-right text-bold">79</span> Datos
-											</p>
-										</div>
-										<div class="pad-all">
-											<div class="pad-btm">
 
 											</div>
 
+											<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+											<div id="page-content">
+
+
+												<div class="row">
+													<div class="col-sm-7 col-sm-offset-5">
+														<div class="panel" style="width:530px">
+															<div class="panel-heading">
+																<h3 class="panel-title">Mapa para coordenadas </h3>
+															</div>
+
+															<!----
+					
+
+
+						                                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+															<div id="demo-marker-map" style="height: 300px"></div>
+															<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+														</div>
+													</div>
+
+												</div>
+
+
+
+
+
+
+
+
+
+												
+												<!--===================================================-->
+												<footer id="footer">
+
+
+													<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+													<
+													<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+
+													<p class="pad-lft- ceneter">Instituto Tecnológico de Tijuana</p>
+
+											
+
+											</footer>
+
+
+											<!--===================================================-->
+											
+											<!--===================================================-->
+											<button class="scroll-top btn">
+												<i class="pci-chevron chevron-up"></i>
+											</button>
+											<!--===================================================-->
 										</div>
-
-
-
-
-									</div>
-
-
-
-								</div>
-
-							</div>
-
-						</div>
-						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-
-						<div id="page-content">
-
-
-							<div class="row">
-								<div class="col-sm-6">
-									<div class="panel" style="width:530px">
-										<div class="panel-heading">
-											<h3 class="panel-title">Mapa</h3>
 										</div>
-
-										<!----
-				<div class="panel-body">
-
-					<!-- Marker --
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-										<div id="demo-marker-map" style="height: 300px"></div>
-										<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-									</div>
-								</div>
-
-							</div>
-
-
-
-
-							
-								
-							
-
-
-							<!-- FOOTER -->
-							<!--===================================================-->
-							<footer id="footer">
-
-
-								<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-								<!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
-								<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-
-
-
-								<p class="pad-lft">Instituto Tecnológico de Tijuana</p>
-
-
-
-							</footer>
-							<!--===================================================-->
-							<!-- END FOOTER -->
-							<!-- SCROLL PAGE BUTTON -->
-							<!--===================================================-->
-							<button class="scroll-top btn">
-								<i class="pci-chevron chevron-up"></i>
-							</button>
-							<!--===================================================-->
-						</div>
-					</div>
-				</diva>    <!--===================================================-->
-				<!-- END OF CONTAINER -->
+										
+									</div>    <!--===================================================-->
+				
 				<!--JAVASCRIPT-->
 				<!--=================================================-->
 				<!--jQuery [ REQUIRED ]-->
